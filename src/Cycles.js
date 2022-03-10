@@ -24,7 +24,7 @@ export function iterationCount(a) {
     a/=2;
     count++;
   }
-  return count;
+  return ++count;
 }
 
 /*
@@ -36,11 +36,11 @@ export function symbolsReplace(message) {
   let i=0;
   let m = "";
   do {
-    if((i)%3==0){
+    if((i+1)%3==0){
       m+=message[i].toLowerCase();
     }
     else{
-      m+=message[i];
+      m+="_";
     }
     i++;
   } while (i!=message.length);
