@@ -37,10 +37,10 @@ export function symbolsReplace(message) {
   let m = "";
   do {
     if((i+1)%3==0){
-      m+=message[i].toLowerCase();
+      m+="_";
     }
     else{
-      m+="_";
+      m+=message[i];
     }
     i++;
   } while (i!=message.length);
