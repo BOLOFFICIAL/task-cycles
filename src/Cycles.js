@@ -36,7 +36,7 @@ export function symbolsReplace(message) {
   let i=0;
   let m = "";
   do {
-    if((i+1)%3==0){
+    if((i)%3==0){
       m+=message[i].toLowerCase();
     }
     else{
